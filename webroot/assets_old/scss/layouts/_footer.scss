@@ -1,0 +1,82 @@
+/*Footer starts here*/
+
+.footer{
+	padding:35px 0 25px;
+	
+	.footer_links{
+		display: inline-block; 
+		width: $width_full;     
+		margin-bottom: 34px;   
+		text-align: center;    
+		padding: 35px 0 30px;  
+		@include border(1px solid #e1e1e1);
+		border-top: $no_border;
+		border-right: $no_border;
+		border-left: $no_border;
+		position: $relative;
+		
+		&:after{
+			content: ''; 
+			height: 3px; 
+			width: 695px; 
+			background: $yellow_color; 
+			display: inline-block; 
+			margin: 0 auto;
+			position: $absolute;   
+			bottom: -1.5px;  
+			left: 50%;   
+			margin-left: -347px;
+		}
+		
+		>li{
+			display: inline-block; 
+			padding: 0 23px;
+			
+			>a{
+				font-family: $semi_bold; 
+				font-size: 12.4px; 
+				text-transform: uppercase; 
+				color: $primary_color;     
+				letter-spacing: 1px;
+				
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	
+	.copyright_section{
+		p{
+			float: $flt_lft; 
+			text-transform: uppercase; 
+			font-size:12px; 
+			font-family: $semi_bold;
+			letter-spacing: 2px;
+		}
+		
+		.social_links{
+			float: $flt_rht;
+			
+			a{
+				display: inline-block; 
+				font-size: 14px; 
+				color: $primary_color; 
+				margin: 0 5px;
+				
+				&:last-child{
+					margin-right: 0;
+				}
+				
+				.fa{
+					font-size: 14px;
+					
+				}
+				
+				&:hover{
+					color: $yellow_color; 
+				}
+			}
+		}
+	}
+}

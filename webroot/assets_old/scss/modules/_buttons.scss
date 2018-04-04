@@ -1,0 +1,87 @@
+/*Buttons starts here*/
+
+.btn{
+	&.yellow_btn{
+		background: $yellow_color;
+		font-family: $bold;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 11.4px;
+		color: $primary_color;
+		@include border-radius(3px);
+		position: $relative;
+		
+		span{
+			position: $relative;
+			z-index: 99;
+		}
+		
+		&:after{
+			content: " ";
+			position: $absolute;
+			height: $height_full;
+			width: 0%;
+			background-color: #e8be0b;
+			top: 0;
+			left: 0;
+			transition: all 0.3s;
+			@include border-radius(3px);
+			
+		}
+		
+		&:hover{
+			&:after{
+				width: $width_full;
+			}
+		}
+		
+		&:active{
+			width: $width_full;
+		}
+	}
+	
+	&.border_btn{
+		@include border(1px solid #222);
+		color: $primary_color;
+		@include border-radius(3px);
+		background: $transparent;
+		font-family: $bold;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 11.4px;
+		color: $primary_color;
+		position: $relative;
+		
+		span{
+			position: $relative;
+			z-index: 99;
+		}
+		
+		&:after{
+			content: " ";
+			position: $absolute;
+			height: $height_full;
+			width: 0%;
+			background: $yellow_color;
+			top: 0;
+			left: 0;
+			transition: all 0.3s;
+			@include border-radius(3px);
+		}
+		
+		&:hover{
+			@include border(1px solid $yellow_color);
+			&:after{
+				width: $width_full;
+			}
+		}
+		
+		&:active{
+			width: $width_full;
+		}
+	}
+	
+	&.section_btn{
+		@include border(2px solid #222);
+	}
+}

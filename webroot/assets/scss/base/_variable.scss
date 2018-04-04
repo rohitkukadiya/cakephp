@@ -1,0 +1,41 @@
+/* Variable scss Document */
+
+/* Position variables */
+$relative: relative;
+$absolute: absolute;
+$fixed: fixed;
+$static: static;
+
+/* color variables */
+$primary_color: #222;
+$secondry_color: #4e4e4e;
+$white_color: #fff;
+$yellow_color: #f9ce14;
+$transparent: transparent;
+$border_color: #d2d2d2;
+$grey: #595959;
+$light_grey: #eaeaea;
+$border_grey: #e8e8e8;
+
+/* Font variables */
+$regular: 'proxima_nova_rgregular';
+$light: 'proxima_novalight';
+$semi_bold: 'proxima_novasemibold';
+$bold: 'proxima_nova_rgbold';
+$extra_bold: 'proxima_novaextrabold';
+$base_font_size: 16.6px;
+$head_font: 30px;
+
+
+/* Float variables */
+$flt_lft: left;
+$flt_rht: right;
+
+/* Other variables */
+$no_margin: 0px 0px 0px 0px;
+$no_padding: 0px 0px 0px 0px;
+$no_border: 0px;
+$width_full: 100%;
+$height_full: 100%;
+$height_none: 0px;
+

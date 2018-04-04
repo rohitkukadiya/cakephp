@@ -1,0 +1,32 @@
+
+@mixin transition($transition) { 
+	-webkit-transition: $transition;
+	   -moz-transition: $transition;
+	     -o-transition: $transition;
+		    transition: $transition;
+}
+
+@mixin button($btn) {
+	background: $yellow_color;
+	color:$primary_color;
+		&:hover{
+			transition: all 0.3s ease;
+			color:$yellow_color;
+		}
+		&:active {
+			background:$btn;
+		} 
+}
+
+@mixin border($border) {
+	border: $border;
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	   -moz-border-radius: $radius;
+	    -ms-border-radius: $radius;
+	     -o-border-radius: $radius;
+		    border-radius: $radius;
+}
+

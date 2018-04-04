@@ -1,0 +1,25 @@
+/*Header starts here*/
+
+.header{
+	padding: 11px 0 0px;
+    @include border(1px solid #ededed);
+    border-top: $no_border;
+    border-left: $no_border;
+    border-right: $no_border;
+}
+.sticky_header{-webkit-transition: all 0.4s ease;  transition: all 0.4s ease;}
+.sticky_header.sticky{ height:70px; 
+background:#fff; 
+position:$fixed;
+top:0;
+ width: 100%; z-index:999;     box-shadow: 13px 11px 28px 11px #e5e5e5;}
+.order_page .sticky_header.sticky{position:static;}
+.sticky_header.sticky .header{border:0;}
+.page_wrap.stick:after{position:$fixed; z-index:9999;}
+.page_wrap.stick .saving_badge{position:$fixed; z-index:99999;}
+.checkout_page .page_wrap:after{content:none;}
+.thankyou_page .page_wrap:after{content:none;}
+.order_page .page_wrap.stick:after{position:absolute;}
+.order_page .page_wrap.stick .saving_badge{position:absolute;}
+.relative{position:relative;}
+.relative.pad_bottom{padding-bottom:50px;}
